@@ -1,0 +1,119 @@
+html{
+	height: 100%;
+}
+
+body{
+	position: relative;
+	font-family: Segoe UI;
+	color: #666;
+	background-color: #eee;
+	height: 100%;
+	margin: 0;
+}
+
+.arrow{
+	
+}
+
+.arrow:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+
+#notifications{
+	display: inline-block;
+	line-height: 40px;
+	height: 50px;
+	width: 50px;
+	background-color: red;
+	text-align: center;
+	margin-top: -25px;
+	font-size: 30px;
+	opacity: 0.5;
+	transition: opacity 0.5s ease;	
+}
+
+#messages{
+	display: inline-block;
+	line-height: 40px;
+	height: 50px;
+	width: 50px;
+	background-color: blue;
+	text-align: center;
+	margin-top: -25px;
+	font-size: 30px;
+	opacity: 0.5;
+	transition: opacity 0.5s ease;	
+}
+
+#reglages{
+	display: inline-block;
+	line-height: 40px;
+	height: 50px;
+	width: 50px;
+	background-color: green;
+	text-align: center;
+	margin-top: -25px;
+	font-size: 30px;
+	opacity: 0.5;
+	transition: opacity 0.5s ease;	
+}
+
+#plus{
+	display: inline-block;
+	line-height: 40px;
+	height: 50px;
+	width: 50px;
+	background-color: yellow;
+	text-align: center;
+	margin-top: -25px;
+	font-size: 30px;
+	opacity: 0.5;
+	transition: opacity 0.5s ease;	
+}
+
+.slider{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	background-color: purple;
+}
+
+#contener{
+	height: 100%;
+	width: 100%;
+	white-space: nowrap;
+	transition: margin-left 2.5s ease;
+	background-color: silver;
+	border: red 5px solid;
+}
+
+.frame{
+	height: 100%;
+	width: 100%;
+	vertical-align: middle;
+	text-align: center;
+	display: inline-block;
+}
+
+.frame:before{
+	content: '';
+	vertical-align: middle;
+	height: 100%;
+	width: 0;
+	display: inline-block;
+}
+
+.frame > span{
+	display: inline-block;
+	vertical-align: middle;
+	padding: 50px;
+	border: 1px solid #ccc;
+	box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	font-size: 30px;
+	border-radius: 2px;
+}

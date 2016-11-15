@@ -1,0 +1,89 @@
+.true_value
+{
+	display: block;
+	height: 32px;
+	width: 90%;
+	color: rgb(0,200,0);
+	background-color: rgba(0,200,0, 0.2);
+	font-size: 15px;
+	font-family: 'Ubuntu';
+	border: 1px rgb(0,200,0) solid;
+	margin: auto;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+
+.false_value
+{
+	display: block;
+	width: 90%;
+	color: rgb(200,0,0);
+	background-color: rgba(200,0,0, 0.2);
+	font-size: 15px;
+	font-family: 'Ubuntu';
+	border: 1px rgb(200,0,0) solid;
+	margin: auto;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+
+.false_value2
+{
+	display: block;
+	width: 90%;
+	color: rgb(200,0,0);
+	background-color: rgba(200,0,0, 0.2);
+	font-size: 15px;
+	font-family: 'Ubuntu';
+	border: 1px rgb(200,0,0) solid;
+	margin: auto;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+
+.false_value_img
+{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.false_value_text
+{
+	display: inline-block;
+	padding-top: 5px;
+	vertical-align: top;
+	color: rgb(200,0,0);
+	font-size: 15px;
+	font-family: 'Ubuntu';
+}
+
+.false_value_text_lien
+{
+	display: inline-block;
+	vertical-align: top;
+	color: rgb(200,0,0);
+	font-size: 15px;
+	font-family: 'Ubuntu';
+}
+
+.false_value_text_lien:hover
+{
+	display: inline-block;
+	vertical-align: top;
+	color: rgb(200,0,0);
+	font-size: 15px;
+	font-family: 'Ubuntu';
+	text-decoration: underline;
+}
+
+
+
+
+<div class="false_value2">
+					<img class="false_value_img" src="../images/fonctionnelles/false.png" alt="wrong cross" height="32px" />
+					<div class="false_value_text" >Vous devez accepter les règles</div>
+				</div>
+				<div class="false_value2">
+					<img class="false_value_img" src="../images/fonctionnelles/false.png" alt="wrong cross" height="32px" />
+					<div class="false_value_text" >Merci de corriger le(s) erreur(s)</div>
+				</div>

@@ -1,0 +1,420 @@
+/*Général*/
+
+html, body, *
+{
+margin: 0;
+padding: 0;
+}
+
+body
+{
+	min-width: 700px;
+}
+
+p
+{
+	overflow: auto;
+	text-align: center;
+	font-size: 15px;
+}
+
+a
+{
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+a:visited
+{
+	text-decoration: none;
+	color: inherit;
+}
+
+/*Entete*/
+
+header
+{
+	height: 20vh;
+	width: 100%;
+	background-color: rgb(175,0,0);
+}
+
+#swaps_infos
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	height: 20vh;
+}
+
+#swaps_logo
+{
+	display: inline-block;
+	vertical-align: bottom;
+	width: 35%;
+	max-width: 180px;
+	height: 20vh;
+	background-image: url('/ressources/images/logo_swaps_blanc.svg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: left center;
+	margin-bottom: 0px;
+}
+
+#swaps_titre
+{
+	display: inline-block;
+	vertical-align: top;
+	height: 20vh;
+	width: 64%;
+	margin-left: -3%;
+	font-family: 'Ubuntu', cursive, sans-serif;
+	font-size: 9vw;
+	line-height: 18vh; 
+	color: rgb(255,255,255);
+}
+
+#swaps_action
+{
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	top: -4px;
+	width: 49%;
+	padding-top: 7vh;
+}
+
+#bouton_connexion
+{
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	top: 4px;
+	height: 5vh;
+	width: 35%;
+	margin-left: 15%;
+	background-color: rgb(175,0,0);
+	border: rgb(255,255,255) 2px solid;
+	border-radius: 0.8vh;
+	font-family: 'Ubuntu', cursive, sans-serif;
+	font-size: 3vh;
+	line-height: 5vh;
+	color: rgb(255,255,255);
+	text-align: center;
+	cursor: pointer;
+}
+
+#bouton_connexion:hover
+{
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	top: 4px;
+	height: 5vh;
+	width: 35%;
+	margin-left: 15%;
+	background-color: rgb(255,255,255);
+	border: rgb(255,255,255) 2px solid;
+	font-family: 'Ubuntu', cursive, sans-serif;
+	font-size: 3vh;
+	line-height: 5vh;
+	color: rgb(175,0,0);
+	text-align: center;
+	cursor: pointer;
+}
+
+#bouton_inscription
+{
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	top: -5vh;
+	height: 5vh;
+	width: 35%;
+	margin-left: 55%;
+	background-color: rgb(255,255,255);
+	border: rgb(255,255,255) 2px solid;
+	border-radius: 0.8vh;
+	font-family: 'Ubuntu', cursive, sans-serif;
+	font-size: 3vh;
+	line-height: 5vh;
+	color: rgb(175,0,0);
+	text-align: center;
+	cursor: pointer;
+}
+
+#bouton_inscription:hover
+{
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	top: -5vh;
+	height: 5vh;
+	width: 35%;
+	margin-left: 55%;
+	background-color: rgb(175,0,0);
+	border: rgb(255,255,255) 2px solid;
+	font-family: 'Ubuntu', cursive, sans-serif;
+	font-size: 3vh;
+	line-height: 5vh;
+	color: rgb(255,255,255);
+	text-align: center;
+	cursor: pointer;
+}
+
+/*Formulaire*/
+
+#cadre_formulaire
+{
+	display: none;
+	overflow: hidden;
+	width: 100%;
+	height: 80vh;
+	background-color: rgb(175,0,0);
+}
+
+#formulaire
+{
+	display: inline-block;
+	vertical-align: middle;
+	width: 201%;
+}
+
+.formulaire
+{
+	display: inline-block;
+	vertical-align: middle;
+	width: calc(50% - 10px);
+	height: 80vh;
+	margin: auto;
+	padding-top: 10vh;
+	background-color: rgb(175,0,0);
+}
+
+.champ
+{
+	display: inline-block;
+	width: 50%;
+	height: 5vh;
+	margin: 2vh 25% 2vh 25%;
+	border: rgb(130,130,130) 2px solid;
+	border-radius: 0.8vh;
+	font-family: 'Ubuntu', cursive, sans-serif;
+	font-size: 2.5vh;
+	line-height: 5vh;
+	color: rgb(130,130,130);
+	text-align: center;
+}
+
+.bouton_form
+{
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	top: 4px;
+	height: 5vh;
+	width: 40%;
+	margin-left: 30%;
+	background-color: rgb(175,0,0);
+	border: rgb(255,255,255) 2px solid;
+	border-radius: 0.8vh;
+	font-family: 'Ubuntu', cursive, sans-serif;
+	font-size: 3vh;
+	line-height: 5vh;
+	color: rgb(255,255,255);
+	text-align: center;
+	cursor: pointer;
+}
+
+.bouton_form:hover
+{
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	top: 4px;
+	height: 5vh;
+	width: 40%;
+	margin-left: 30%;
+	background-color: rgb(255,255,255);
+	border: rgb(255,255,255) 2px solid;
+	font-family: 'Ubuntu', cursive, sans-serif;
+	font-size: 3vh;
+	line-height: 5vh;
+	color: rgb(175,0,0);
+	text-align: center;
+	cursor: pointer;
+}
+
+#inscription > p
+{
+	font-family: 'Ubuntu', cursive, sans-serif;
+	font-size: 1.8vh;
+	color: rgb(255,255,255);
+	text-align: center;
+	margin-bottom: 2vh;
+}
+
+/*Slider*/
+
+#slider
+{
+	width:100%;
+	height: 80vh;
+}
+
+#slider > .slide
+{
+	background-image: url('/ressources/images/background1.jpg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: top left;
+	width:100%;
+	height: 80vh;
+	filter: grayscale(40%);
+	-webkit-filter: grayscale(40%);
+}
+
+#slider > .slide > .legend_slide
+{
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	top: 30vh;
+	height: 20vh;
+	width: 100%;
+	text-align: center;
+
+}
+
+#slider > .slide > .legend_slide > h1
+{
+	display: inline-block;
+	width: 100%;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 5vw;
+	color: rgb(200,200,200);
+}
+
+#slider > .slide > .legend_slide > a
+{
+	display: inline-block;
+	vertical-align: middle;
+	width: 20%;
+	height: 6vh;
+	margin: 2vh 40% 2vh 40%;
+	background-color: rgb(255,0,0);
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 2vw;
+	line-height: 6vh; 
+	color: rgb(255,255,255);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#slider > .slide > .legend_slide > hr
+{
+	display: inline-block;
+	width: 80%;
+	margin: 1vh 10% 3vh 10%;
+	height: 2px;
+	background-color: rgb(200,200,200);
+	border: 0px solid rgb(200,200,200);
+}
+
+#slider > .slide > .legend_slide > h3
+{
+	display: inline-block;
+	width: 100%;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.5vw;
+	color: rgb(200,200,200);
+}
+
+/*Conteneur*/
+
+section
+{
+	display: inline-block;
+	width: 100%;
+}
+
+article
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 40vw;
+}
+
+article > h2
+{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 3vw;
+	color: rgb(0,0,0);
+}
+
+article > p
+{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.5vw;
+	color: rgb(0,0,0);
+}
+
+#draw_your_network
+{
+	display: inline-block;
+	width: 102vw;
+	overflow: hidden;
+	height: 70vh;
+	margin: 10vh 0 10vh 0;
+}
+
+#draw_your_network > img
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 60vw; 
+}
+
+
+
+/*footer*/
+
+footer
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+	padding-top: 3vh;
+	background-color: rgb(30,30,30);
+	font-family: "Ubuntu", Arial, sans-serif;
+	font-size: 16px;
+	color : rgb(255,255,255);
+	overflow: hidden;
+}
+
+.lien_footer
+{
+	color: rgb(255,255,255);
+	font-family: "Ubuntu", Arial, sans-serif;
+}
+
+.infos_footer
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+	margin-right: 2%;
+	margin-left: 2%;
+}
+
+.fooot
+{
+	display: inline-block;
+	padding: 20px;
+	font-size: 14px;
+}

@@ -1,0 +1,64 @@
+############# Pages par défaut
+
+ErrorDocument 400 /400.html
+ErrorDocument 401 /401.html
+ErrorDocument 403 /interdit.html
+ErrorDocument 404 /notfound.html
+ErrorDocument 500 /500.html
+DirectoryIndex index.php ressources/error/interdit.html
+
+############## URL Rewriting
+
+Options +FollowSymlinks
+RewriteEngine on
+
+#Swaps
+
+RewriteRule ^activation/([0-9]+)-([a-zA-Z0-9]+)/$ /inscription/activation.php?id=$1&cle=$2 [L]
+RewriteRule ^inscription/$ /inscription/traitement.php [L]
+RewriteRule ^inscription$ /inscription/traitement.php [L]
+RewriteRule ^connexion/$ /connexion/traitement.php [L]
+RewriteRule ^connexion$ /connexion/traitement.php [L]
+RewriteRule ^deco/$ /connexion/deco.php [L]
+RewriteRule ^deco$ /connexion/deco.php [L]
+RewriteRule ^fonctionnement/$ /aide/fonctionnement.php [L]
+RewriteRule ^fonctionnement$ /aide/fonctionnement.php [L]
+RewriteRule ^actu/$ /pages/actu.php [L]
+RewriteRule ^actu$ /pages/actu.php [L]
+RewriteRule ^abonnements/$ /pages/abonnements.php [L]
+RewriteRule ^abonnements$ /pages/abonnements.php [L]
+RewriteRule ^fil-rouge/$ /pages/fil-rouge.php [L]
+RewriteRule ^fil-rouge$ /pages/fil-rouge.php [L]
+RewriteRule ^tendances/$ /pages/tendances.php [L]
+RewriteRule ^tendances$ /pages/tendances.php [L]
+RewriteRule ^recherche/$ /pages/recherche.php [L]
+
+RewriteRule ^parametres/$ /pages/parametres.php [L]
+
+
+RewriteRule ^membre/([a-zA-Z0-9]+)-([0-9]+)/$ /pages/membre.php?id=$2&pseudo=$1 [L]
+RewriteRule ^espace/([a-zA-Z0-9]+)-([0-9]+)/$ /pages/espace.php?id=$2&pseudo=$1 [L]
+
+# user/pseudo-id/
+
+
+#Documentation
+
+RewriteRule ^conditions-generales-d-utilisation$ ressources/pdf/reglement.pdf [L]
+RewriteRule ^regle-de-confidentialitees$ ressources/pdf/regle_de_confidentialitees.pdf [L]
+
+############# Gestion des permissions
+
+
+
+
+#Nouvelle règle d'écriture 
+#RewriteRule page/user/([0-9]+) page/user.php?id=$1
+
+# $0 appelle toute l'URL, $1 appelle première parenthèse, $2 appele deuxième parenthèse ....
+
+#Nouvelle règle d'écriture 
+#RewriteRule page/user/([a-zA-Z0-9\-]+)([0-9]+) page/user.php?pseudo=$1&id=$2
+
+#On peut ajouter un pseudo devant l'id 
+#Le pseudo fait référence à un champ de bdd, on créé le lien en concaténant les données suite à une requête
